@@ -1,0 +1,360 @@
+body{
+    background-color: grey;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-top: 30px;
+}
+
+            /* Ventana modal clases */
+.modal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-modal:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+    transition: all 500ms ease;
+    position: relative;
+    transform: translateY(-30%);
+}
+
+#btn-modal:checked ~ .modal .contenedor{
+    transform: translateY(0%);
+}
+.contenedor header{
+    padding:10px;
+    background: black;
+    color: white;
+}
+
+.contenedor label{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#btn-modal{
+    display: none;
+}
+
+.lbl-modal{
+    cursor: pointer;
+}
+
+
+
+/* ventana modal horarios */
+
+.modalUno{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalUno{
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-modalUno:checked ~ .modalUno{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedorUno{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+    transition: all 500ms ease;
+    position: relative;
+    transform: translateY(-30%);
+}
+
+#btn-modalUno:checked ~ .modalUno .contenedorUno{
+    transform: translateY(0%);
+}
+.contenedorUno header{
+    padding:10px;
+    background: black;
+    color: white;
+}
+
+.contenedorUno label{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#btn-modalUno{
+    display: none;
+}
+
+.lbl-modalUno{
+    cursor: pointer;
+}
+
+
+/* ventana modal ubicacion */
+
+.modalDos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalDos{
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-modalDos:checked ~ .modalDos{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedorDos{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+    transition: all 500ms ease;
+    position: relative;
+    transform: translateY(-30%);
+}
+
+#btn-modalDos:checked ~ .modalDos .contenedorDos{
+    transform: translateY(0%);
+}
+.contenedorDos header{
+    padding:10px;
+    background: black;
+    color: white;
+}
+
+.contenedorDos label{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#btn-modalDos{
+    display: none;
+}
+
+.lbl-modalDos{
+    cursor: pointer;
+}
+
+
+/* ventana modal abonos */
+
+
+.modalTres{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalTres{
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-modalTres:checked ~ .modalTres{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedorTres{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+    transition: all 500ms ease;
+    position: relative;
+    transform: translateY(-30%);
+}
+
+#btn-modalTres:checked ~ .modalTres .contenedorTres{
+    transform: translateY(0%);
+}
+.contenedorTres header{
+    padding:10px;
+    background: black;
+    color: white;
+}
+
+.contenedorTres label{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#btn-modalTres{
+    display: none;
+}
+
+.lbl-modalTres{
+    cursor: pointer;
+}
+
+
+
+
+
+                /* accesorios */
+
+.logo{
+    width: 100%;
+    box-shadow: 10px 20px 50px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    
+}
+
+.clases, .horarios, .abonos{
+    width: 500px;
+    height: 500px;
+}
+
+.ubicacion{
+    width: 100%;
+}
+
+.icono{
+    background-color: black;
+    color: grey;
+    border-radius: 120px;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.caracteristicas{
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+              /* Sector imagenes */
+
+
+
+.galeriaImagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes{
+    padding: 0 20px 20px;
+    
+}
+
+.image{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 10px 20px 50px rgba(0,0,0,0.3);
+    border: 2px solid white;
+}
+
+.imagenes:hover{
+    opacity: .7;
+    transition: .9;
+}
+
+
+
+              /* Footer */
+
+.infoGeneral{
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 10px 20px 50px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 20px;
+
+}
+
+.lugarFecha{
+    color: white;
+}
+
+.instagram, .facebook{
+    color: white;
+}
+
+a{
+    border: 1px solid black;
+    padding: 10px;
+}
